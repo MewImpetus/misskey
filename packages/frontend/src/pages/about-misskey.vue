@@ -17,19 +17,16 @@
 					<button v-if="thereIsTreasure" class="_button treasure" @click="getTreasure"><img src="/fluent-emoji/1f3c6.png" class="treasureImg"></button>
 				</div>
 				<div style="text-align: center;">
-					{{ i18n.ts._aboutMisskey.about }}<br><a href="https://misskey-hub.net/docs/misskey.html" target="_blank" class="_link">{{ i18n.ts.learnMore }}</a>
-				</div>
-				<div style="text-align: center;">
 					<MkButton primary rounded inline @click="iLoveMisskey">I <Mfm text="$[jelly ❤]"/> #Misskey</MkButton>
 				</div>
-				<FormSection>
-					<div class="_formLinks">
-						<FormLink to="https://github.com/misskey-dev/misskey" external>
+				<!-- <FormSection>
+					<div class="_formLinks"> -->
+						<!-- <FormLink to="https://github.com/misskey-dev/misskey" external>
 							<template #icon><i class="ti ti-code"></i></template>
 							{{ i18n.ts._aboutMisskey.source }}
 							<template #suffix>GitHub</template>
-						</FormLink>
-						<FormLink to="https://crowdin.com/project/misskey" external>
+						</FormLink> -->
+						<!-- <FormLink to="https://crowdin.com/project/misskey" external>
 							<template #icon><i class="ti ti-language-hiragana"></i></template>
 							{{ i18n.ts._aboutMisskey.translation }}
 							<template #suffix>Crowdin</template>
@@ -38,9 +35,9 @@
 							<template #icon><i class="ti ti-pig-money"></i></template>
 							{{ i18n.ts._aboutMisskey.donate }}
 							<template #suffix>Patreon</template>
-						</FormLink>
-					</div>
-				</FormSection>
+						</FormLink> -->
+					<!-- </div>
+				</FormSection> -->
 				<FormSection>
 					<template #label>{{ i18n.ts._aboutMisskey.contributors }}</template>
 					<div :class="$style.contributors">
@@ -212,7 +209,7 @@ function gravity() {
 
 function iLoveMisskey() {
 	os.post({
-		initialText: 'I $[jelly ❤] #Misskey',
+		initialText: 'I $[jelly ❤] #Crowds',
 		instant: true,
 	});
 }

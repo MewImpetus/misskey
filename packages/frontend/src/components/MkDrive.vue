@@ -24,7 +24,6 @@
 			<span v-if="folder != null" class="separator"><i class="ti ti-chevron-right"></i></span>
 			<span v-if="folder != null" class="folder current">{{ folder.name }}</span>
 		</div>
-		<button class="menu _button" @click="showMenu"><i class="ti ti-dots"></i></button>
 	</nav>
 	<div
 		ref="main" class="main"

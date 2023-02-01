@@ -69,17 +69,7 @@ export function openInstanceMenu(ev: MouseEvent) {
 			text: i18n.ts.manageCustomEmojis,
 			icon: 'ti ti-icons',
 		} : undefined],
-	}, null, {
-		text: i18n.ts.help,
-		icon: 'ti ti-question-circle',
-		action: () => {
-			window.open('https://misskey-hub.net/help.html', '_blank');
-		},
-	}, {
-		type: 'link',
-		text: i18n.ts.aboutMisskey,
-		to: '/about-misskey',
-	}], ev.currentTarget ?? ev.target, {
+	}, null,], ev.currentTarget ?? ev.target, {
 		align: 'left',
 	});
 }

@@ -127,11 +127,6 @@ const menuDef = computed(() => [{
 		text: i18n.ts.sounds,
 		to: '/settings/sounds',
 		active: currentPage?.route.name === 'sounds',
-	}, {
-		icon: 'ti ti-plug',
-		text: i18n.ts.plugins,
-		to: '/settings/plugin',
-		active: currentPage?.route.name === 'plugin',
 	}],
 }, {
 	title: i18n.ts.otherSettings,
@@ -155,21 +150,6 @@ const menuDef = computed(() => [{
 		text: i18n.ts.wordMute,
 		to: '/settings/word-mute',
 		active: currentPage?.route.name === 'word-mute',
-	}, {
-		icon: 'ti ti-api',
-		text: 'API',
-		to: '/settings/api',
-		active: currentPage?.route.name === 'api',
-	}, {
-		icon: 'ti ti-webhook',
-		text: 'Webhook',
-		to: '/settings/webhook',
-		active: currentPage?.route.name === 'webhook',
-	}, {
-		icon: 'ti ti-dots',
-		text: i18n.ts.other,
-		to: '/settings/other',
-		active: currentPage?.route.name === 'other',
 	}],
 }, {
 	items: [{

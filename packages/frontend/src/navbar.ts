@@ -82,11 +82,6 @@ export const navbarItemDef = reactive({
 		icon: 'ti ti-news',
 		to: '/pages',
 	},
-	play: {
-		title: 'Play',
-		icon: 'ti ti-player-play',
-		to: '/play',
-	},
 	gallery: {
 		title: i18n.ts.gallery,
 		icon: 'ti ti-icons',
