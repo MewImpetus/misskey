@@ -20,7 +20,9 @@
 			<template v-else><i class="ti ti-chevron-down"></i></template>
 		</button>
 		<span :class="$style.title"><slot name="header"></slot></span>
-		<button v-tooltip="i18n.ts.settings" :class="$style.menu" class="_button" @click.stop="showSettingsMenu"><i class="ti ti-dots"></i></button>
+		<button v-tooltip="i18n.ts.settings" :class="$style.menu" class="_button" @click.stop="showSettingsMenu">
+			<i class="ti ti-dots"></i>
+		</button>
 	</header>
 	<div v-show="active" ref="body" :class="$style.body">
 		<slot></slot>

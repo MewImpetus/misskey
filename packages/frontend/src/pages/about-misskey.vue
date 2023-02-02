@@ -209,7 +209,7 @@ function gravity() {
 
 function iLoveMisskey() {
 	os.post({
-		initialText: 'I $[jelly ❤] #Crowds',
+		initialText: 'I $[jelly ❤] #MetaCrowds',
 		instant: true,
 	});
 }

@@ -3,9 +3,9 @@
 	<template #icon><i class="ti ti-chart-line"></i></template>
 	<template #header>{{ $ts.activity }}</template>
 	<template #func="{ buttonStyleClass }">
-		<button class="_button" :class="buttonStyleClass" @click="showMenu">
+		<!-- <button class="_button" :class="buttonStyleClass" @click="showMenu">
 			<i class="ti ti-dots"></i>
-		</button>
+		</button> -->
 	</template>
 
 	<div style="padding: 8px;">
