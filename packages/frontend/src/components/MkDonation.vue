@@ -17,9 +17,9 @@
 					{{ $instance.name ?? host }}
 				</template>
 			</I18n>
-			<div style="margin-top: 0.2em;">
+			<!-- <div style="margin-top: 0.2em;">
 				<MkLink target="_blank" url="https://misskey-hub.net/docs/donate.html">{{ i18n.ts.learnMore }}</MkLink>
-			</div>
+			</div> -->
 		</div>
 		<div class="_buttons">
 			<MkButton @click="close">{{ i18n.ts.remindMeLater }}</MkButton>
